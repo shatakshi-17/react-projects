@@ -36,8 +36,7 @@ const passwordRef = useRef(null)
   }, [length, numberAllowed, charAllowed])
   //explanation: useEffect is used to run a function after the component renders
   //we want to run the passwordGenerator function when the length, numberAllowed, or charAllowed state changes
-  //so we pass the length, numberAllowed, charAllowed and passwordGenerator function as the dependency array
-  //why is passwordGenerator function passed as the dependency array when it is itself the function that is being run?
+  //so we pass the length, numberAllowed and charAllowed  as the dependency array
   
 
   return (
